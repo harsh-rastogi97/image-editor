@@ -121,11 +121,22 @@ main section {
     width: 15px;
     height: 15px;
     border-radius: 8px;
-    background-color: burlywood;
+    background-color: var(--slider-thumb-color);
+    border: 1.5px solid var(--text-primary-color);
 }
 
 canvas {
     display: none;
     max-width: 90%;
     max-height: 75vh;
+}
+
+.presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-s);
+}
+
+.preset {
+    color: var(--text-active-color);
 }
